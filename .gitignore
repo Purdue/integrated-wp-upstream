@@ -17,6 +17,7 @@ web/*
 !web/wp-config-local-sample.php
 !web/wp-content/
 web/wp-content/*
+!web/wp-content/.gitkeep
 !web/wp-content/mu-plugins/
 web/wp-content/mu-plugins/*
 !web/wp-content/mu-plugins/custom
