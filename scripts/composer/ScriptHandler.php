@@ -25,8 +25,10 @@ class ScriptHandler
     $root = static::getWordPressRoot(getcwd());
 
     $dirs = [
+      'app/mu-plugins',
       'app/plugins',
       'app/themes',
+      'wp-content',
       'cms',
       'private/scripts/quicksilver',
     ];
