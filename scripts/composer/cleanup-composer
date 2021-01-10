@@ -17,22 +17,27 @@ fi
 
 # Make upstream plugins MUST USE
 if [ -d "web/app/plugins/autodescription" ]; then
+  if [ -d "web/app/mu-plugins/autodescription" ]; then rm -Rf web/app/mu-plugins/autodescription; fi
   mv -f web/app/plugins/autodescription/ web/app/mu-plugins/autodescription
 fi
 
 if [ -d "web/app/plugins/duracelltomi-google-tag-manager" ]; then
+  if [ -d "web/app/mu-plugins/duracelltomi-google-tag-manager" ]; then rm -Rf web/app/mu-plugins/duracelltomi-google-tag-manager; fi
   mv -f web/app/plugins/duracelltomi-google-tag-manager/ web/app/mu-plugins/duracelltomi-google-tag-manager
 fi
 
 if [ -d "web/app/plugins/hyperdb" ]; then
+  if [ -d "web/app/mu-plugins/hyperdb" ]; then rm -Rf web/app/mu-plugins/hyperdb; fi
   mv -f web/app/plugins/hyperdb/ web/app/mu-plugins/hyperdb
 fi
 
 if [ -d "web/app/plugins/pantheon-advanced-page-cache" ]; then
+  if [ -d "web/app/mu-plugins/pantheon-advanced-page-cache" ]; then rm -Rf web/app/mu-plugins/pantheon-advanced-page-cache; fi
   mv -f web/app/plugins/pantheon-advanced-page-cache/ web/app/mu-plugins/pantheon-advanced-page-cache
 fi
 
 if [ -d "web/app/plugins/post-smtp" ]; then
+  if [ -d "web/app/mu-plugins/post-smtp" ]; then rm -Rf web/app/mu-plugins/post-smtp; fi
   mv -f web/app/plugins/post-smtp/ web/app/mu-plugins/post-smtp
 fi
 
@@ -42,13 +47,16 @@ fi
 # fi
 
 if [ -d "web/app/plugins/stream" ]; then
+  if [ -d "web/app/mu-plugins/stream" ]; then rm -Rf web/app/mu-plugins/stream; fi
   mv -f web/app/plugins/stream/ web/app/mu-plugins/stream
 fi
 
 if [ -d "web/app/plugins/wp-native-php-sessions" ]; then
+  if [ -d "web/app/mu-plugins/wp-native-php-sessions" ]; then rm -Rf web/app/mu-plugins/wp-native-php-sessions; fi
   mv -f web/app/plugins/wp-native-php-sessions/ web/app/mu-plugins/wp-native-php-sessions
 fi
 
 if [ -d "web/app/plugins/wp-password-bcrypt" ]; then
+  if [ -d "web/app/mu-plugins/wp-password-bcrypt" ]; then rm -Rf web/app/mu-plugins/wp-password-bcrypt; fi
   mv -f web/app/plugins/wp-password-bcrypt/ web/app/mu-plugins/wp-password-bcrypt
 fi
