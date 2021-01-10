@@ -1,5 +1,5 @@
 {
-    "name": "pantheon-upstreams/upstream-config",
+    "name": "purdue/upstream-config",
     "type": "project",
     "version": "1.0.1",
     "repositories": [

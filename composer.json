@@ -18,7 +18,7 @@
     }
   ],
   "require": {
-    "pantheon-upstreams/upstream-config": "*"
+    "purdue/upstream-config": "*"
   },
   "config": {
     "vendor-dir": "vendor",
