@@ -36,10 +36,10 @@ if [ -d "web/app/plugins/post-smtp" ]; then
   mv -f web/app/plugins/post-smtp/ web/app/mu-plugins/post-smtp
 fi
 
-if [ -d "web/app/plugins/soil" ]; then
-  # Soil autoloads and requires config
+# Soil autoloads and requires config
+# if [ -d "web/app/plugins/soil" ]; then
   # mv -f web/app/plugins/soil/ web/app/mu-plugins/soil
-fi
+# fi
 
 if [ -d "web/app/plugins/stream" ]; then
   mv -f web/app/plugins/stream/ web/app/mu-plugins/stream
