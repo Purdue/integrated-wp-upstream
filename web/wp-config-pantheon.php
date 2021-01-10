@@ -1,4 +1,35 @@
 <?php
+
+$primary_domain = $_SERVER['HTTP_HOST'];
+// Enforce Production URL and HTTPS on Pantheon
+if (isset($_ENV['PANTHEON_ENVIRONMENT']) && php_sapi_name() != 'cli') {
+  // Redirect to https://$primary_domain in the Live environment
+
+  if ($_ENV['PANTHEON_ENVIRONMENT'] === 'live') {
+    // $primary_domain = 'www.domain.com';
+  } 
+  elseif ($_ENV['PANTHEON_ENVIRONMENT'] === 'test') {
+    // $primary_domain = 'test.domain.com';
+  } 
+  elseif ($_ENV['PANTHEON_ENVIRONMENT'] === 'dev') {
+    // $primary_domain = 'dev.domain.com';
+  } 
+
+  if ($_SERVER['HTTP_HOST'] != $primary_domain
+      || !isset($_SERVER['HTTP_USER_AGENT_HTTPS'])
+      || $_SERVER['HTTP_USER_AGENT_HTTPS'] != 'ON' ) {
+
+    # Name transaction "redirect" in New Relic for improved reporting (optional)
+    if (extension_loaded('newrelic')) {
+      newrelic_name_transaction("redirect");
+    }
+
+    header('HTTP/1.0 301 Moved Permanently');
+    header('Location: https://'. $primary_domain . $_SERVER['REQUEST_URI']);
+    exit();
+  }
+}
+
 /**
  * Set root path
  */
@@ -69,7 +100,7 @@ if ( isset( $_SERVER['HTTP_HOST'] ) ) {
         $scheme = 'https';
     }
     define( 'WP_HOME', $scheme . '://' . $_SERVER['HTTP_HOST'] );
-    define( 'WP_SITEURL', $scheme . '://' . $_SERVER['HTTP_HOST'] . '/wp' );
+    define( 'WP_SITEURL', $scheme . '://' . $_SERVER['HTTP_HOST'] . '/cms' );
 
 }
 
@@ -87,6 +118,22 @@ if (in_array($_ENV['PANTHEON_ENVIRONMENT'], array( 'test', 'live' ) ) ) {
     if ( ! defined('DISALLOW_FILE_EDIT') ) {
         define( 'DISALLOW_FILE_EDIT', true );
     }	
+    if ( ! defined('DISALLOW_FILE_EDIT') ) {
+        define( 'DISALLOW_FILE_EDIT', true );
+    }	
+} else {
+    if ( ! defined('DISALLOW_FILE_MODS') ) {
+        define( 'DISALLOW_FILE_MODS', false );
+    }
+    if ( ! defined('DISALLOW_FILE_EDIT') ) {
+        define( 'DISALLOW_FILE_EDIT', false );
+    }	
+    if ( ! defined('DISALLOW_FILE_EDIT') ) {
+        define( 'DISALLOW_FILE_EDIT', false );
+    }	
+    if ( ! defined( 'WP_DEBUG' ) ) {
+        define('WP_DEBUG', true);
+    }
 }
 
 /**

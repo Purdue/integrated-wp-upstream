@@ -42,8 +42,8 @@ if (file_exists(dirname(__FILE__) . '/wp-config-pantheon.php') && isset($_ENV['P
 /*
 * Define wp-content directory outside of WordPress core directory
 */
-define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/wp-content' );
-define( 'WP_CONTENT_URL', WP_HOME . '/wp-content' );
+define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/app' );
+define( 'WP_CONTENT_URL', WP_HOME . '/app' );
 
 /** Standard wp-config.php stuff from here on down. **/
 
@@ -53,7 +53,7 @@ define( 'WP_CONTENT_URL', WP_HOME . '/wp-content' );
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix = 'wp_';
+$table_prefix = 'blrmkr_';
 
 /**
  * For developers: WordPress debugging mode.
@@ -68,6 +68,17 @@ $table_prefix = 'wp_';
 if ( ! defined( 'WP_DEBUG' ) ) {
 	define('WP_DEBUG', false);
 }
+if ( WP_DEBUG ) {
+    define( 'WP_DEBUG_LOG', true );
+    define( 'WP_DEBUG_DISPLAY', false );
+    @ini_set( 'display_errors', 0 );
+}
+
+define('AUTOSAVE_INTERVAL', 240 );
+define('WP_POST_REVISIONS', 4);
+define('EMPTY_TRASH_DAYS', 15);  // Default is 30
+define('DISABLE_WP_CRON', false);  // If you set to TRUE, configure another method to run jobs
+
 
 /* That's all, stop editing! Happy Pressing. */
 

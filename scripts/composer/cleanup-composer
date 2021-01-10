@@ -3,14 +3,51 @@
 # Exit immediately on errors, and echo commands as they are executed.
 set -ex
 
-if [ -d "web/wp/wp-content/mu-plugins/" ]; then
-  rsync -r web/wp/wp-content/mu-plugins/* web/wp-content/mu-plugins/
+if [ -d "web/cms/wp-content/mu-plugins/" ]; then
+  rsync -r web/cms/wp-content/mu-plugins/* web/app/mu-plugins/
 fi
 
-if [ -f "web/wp/wp-config.php" ]; then
-  rm web/wp/wp-config.php
+if [ -f "web/cms/wp-config.php" ]; then
+  rm web/cms/wp-config.php
 fi
 
-if [ -d "web/wp/wp-content" ]; then
-  rm -rf web/wp/wp-content
+if [ -d "web/cms/wp-content" ]; then
+  rm -rf web/cms/wp-content
+fi
+
+# Make upstream plugins MUST USE
+if [ -d "web/app/plugins/autodescription" ]; then
+  mv -f web/app/plugins/autodescription/ web/app/mu-plugins/autodescription
+fi
+
+if [ -d "web/app/plugins/duracelltomi-google-tag-manager" ]; then
+  mv -f web/app/plugins/duracelltomi-google-tag-manager/ web/app/mu-plugins/duracelltomi-google-tag-manager
+fi
+
+if [ -d "web/app/plugins/hyperdb" ]; then
+  mv -f web/app/plugins/hyperdb/ web/app/mu-plugins/hyperdb
+fi
+
+if [ -d "web/app/plugins/pantheon-advanced-page-cache" ]; then
+  mv -f web/app/plugins/pantheon-advanced-page-cache/ web/app/mu-plugins/pantheon-advanced-page-cache
+fi
+
+if [ -d "web/app/plugins/post-smtp" ]; then
+  mv -f web/app/plugins/post-smtp/ web/app/mu-plugins/post-smtp
+fi
+
+if [ -d "web/app/plugins/soil" ]; then
+  mv -f web/app/plugins/soil/ web/app/mu-plugins/soil
+fi
+
+if [ -d "web/app/plugins/stream" ]; then
+  mv -f web/app/plugins/stream/ web/app/mu-plugins/stream
+fi
+
+if [ -d "web/app/plugins/wp-native-php-sessions" ]; then
+  mv -f web/app/plugins/wp-native-php-sessions/ web/app/mu-plugins/wp-native-php-sessions
+fi
+
+if [ -d "web/app/plugins/wp-password-bcrypt" ]; then
+  mv -f web/app/plugins/wp-password-bcrypt/ web/app/mu-plugins/wp-password-bcrypt
 fi
