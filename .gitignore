@@ -79,6 +79,14 @@ web/wp-content/backupwordpress-*/
 web/wp-content/managewp/backups/
 web/wp-content/advanced-cache.php
 web/wp-content/wp-cache-config.php
+web/app/blogs.dir/
+web/app/upgrade/
+web/app/backup-db/
+web/app/updraft/
+web/app/backupwordpress-*/
+web/app/managewp/backups/
+web/app/advanced-cache.php
+web/app/wp-cache-config.php
 web/sitemap.xml
 web/sitemap.xml.gz
 *.log
