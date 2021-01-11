@@ -15,6 +15,15 @@ if [ -d "web/cms/wp-content" ]; then
   rm -rf web/cms/wp-content
 fi
 
+# Allow custom plugins and themes 
+if [ -d "web/app/plugins/custom" ]; then
+  rsync -r web/app/plugins/custom/* web/app/plugins/
+fi
+
+if [ -d "web/app/themes/custom" ]; then
+  rsync -r web/app/themes/custom/* web/app/themes/
+fi
+
 # Make upstream plugins MUST USE
 if [ -d "web/app/plugins/autodescription" ]; then
   if [ -d "web/app/mu-plugins/autodescription" ]; then rm -Rf web/app/mu-plugins/autodescription; fi
@@ -40,11 +49,6 @@ if [ -d "web/app/plugins/post-smtp" ]; then
   if [ -d "web/app/mu-plugins/post-smtp" ]; then rm -Rf web/app/mu-plugins/post-smtp; fi
   mv -f web/app/plugins/post-smtp/ web/app/mu-plugins/post-smtp
 fi
-
-# Soil autoloads and requires config
-# if [ -d "web/app/plugins/soil" ]; then
-  # mv -f web/app/plugins/soil/ web/app/mu-plugins/soil
-# fi
 
 if [ -d "web/app/plugins/stream" ]; then
   if [ -d "web/app/mu-plugins/stream" ]; then rm -Rf web/app/mu-plugins/stream; fi
