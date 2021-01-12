@@ -41,6 +41,7 @@ web/app/themes/*
 !web/app/uploads
 !web/app/config/
 !web/app/index.php
+!wep/app/object-cache.php
 web/cms
 !web/private/
 web/private/*
