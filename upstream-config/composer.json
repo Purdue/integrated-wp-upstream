@@ -1,7 +1,7 @@
 {
     "name": "purdue/upstream-config",
     "type": "project",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "repositories": [
         {
             "type": "composer",
@@ -25,14 +25,15 @@
         "wpackagist-plugin/hyperdb":"1.7",
         "wpackagist-plugin/pantheon-hud": "0.3.*",
         "wpackagist-plugin/post-smtp": "2.*",
+        "wpackagist-plugin/siteimprove":"1.2.0",
         "wpackagist-plugin/stream": "3.*",
         "wpackagist-plugin/wordpress-importer": "0.*",
         "wpackagist-plugin/wp-redis": "1.1.*",
         "alquemie/alquemie-config": "0.1.*",
-        "purdue/boilerup-wp": "1.4.3",
-        "purdue/bulma-blocks": "1.4.4",
-        "purdue/purdue-blocks": "1.13.3",
-        "purdue/purdue-wp-theme": "1.4.7",
+        "purdue/boilerup-wp": "1.4.*",
+        "purdue/bulma-blocks": "1.4.*",
+        "purdue/purdue-blocks": "1.13.*",
+        "purdue/purdue-wp-theme": "1.4.*",
         "wpackagist-theme/twentytwentyone":"1.*"
     },
     "require-dev": {
