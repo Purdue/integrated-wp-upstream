@@ -31,10 +31,7 @@
         "wpackagist-plugin/wordpress-importer": "0.*",
         "wpackagist-plugin/wp-redis": "1.1.*",
         "alquemie/alquemie-config": "0.1.*",
-        "purdue/boilerup-wp": "1.4.*",
-        "purdue/bulma-blocks": "1.4.*",
-        "purdue/purdue-blocks": "1.15.*",
-        "purdue/purdue-wp-theme": "1.5.*",
+        "purdue/purdue-wp-theme": "1.5.3.2",
         "wpackagist-theme/twentytwentyone":"1.*"
     },
     "require-dev": {
