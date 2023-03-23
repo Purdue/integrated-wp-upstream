@@ -23,7 +23,7 @@
         "wpackagist-plugin/authorizer":"^3.2.2",
         "wpackagist-plugin/autodescription": "4.*",
         "wpackagist-plugin/duracelltomi-google-tag-manager": "^1.14.2",
-        "wpackagist-plugin/hyperdb":"1.8",
+        "wpackagist-plugin/hyperdb":"1.7",
         "wpackagist-plugin/pantheon-hud": "0.3.*",
         "wpackagist-plugin/post-smtp": "2.*",
         "wpackagist-plugin/siteimprove":"^1.2.1",
