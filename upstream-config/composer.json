@@ -1,7 +1,7 @@
 {
     "name": "purdue/upstream-config",
     "type": "project",
-    "version": "1.0.80",
+    "version": "1.0.81",
     "repositories": [
         {
             "type": "composer",
@@ -19,7 +19,6 @@
         "wpackagist-plugin/pantheon-advanced-page-cache": ">=0.3.0",
         "wpackagist-plugin/wp-native-php-sessions": ">=0.6.9",
         "wp-coding-standards/wpcs": "^1.2.1",
-        "wpackagist-plugin/authorizer":"^3.2.2",
         "wpackagist-plugin/autodescription": "*",
         "wpackagist-plugin/duracelltomi-google-tag-manager": "^1.14.2",
         "wpackagist-plugin/hyperdb":"1.7",
