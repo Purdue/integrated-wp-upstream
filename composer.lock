@@ -242,16 +242,16 @@
         },
         {
             "name": "pantheon-systems/wordpress-composer",
-            "version": "7.0",
+            "version": "7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pantheon-systems/wordpress-composer.git",
-                "reference": "75c80e1d70dc0302fb5928527424e0af28a8ad73"
+                "reference": "49a6696f95eac54cffa851a29e40f6bfff0edde7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pantheon-systems/wordpress-composer/zipball/75c80e1d70dc0302fb5928527424e0af28a8ad73",
-                "reference": "75c80e1d70dc0302fb5928527424e0af28a8ad73",
+                "url": "https://api.github.com/repos/pantheon-systems/wordpress-composer/zipball/49a6696f95eac54cffa851a29e40f6bfff0edde7",
+                "reference": "49a6696f95eac54cffa851a29e40f6bfff0edde7",
                 "shasum": ""
             },
             "require": {
@@ -271,22 +271,22 @@
             "description": "WordPress for Pantheon with a composer.json file.",
             "support": {
                 "issues": "https://github.com/pantheon-systems/wordpress-composer/issues",
-                "source": "https://github.com/pantheon-systems/wordpress-composer/tree/7.0"
+                "source": "https://github.com/pantheon-systems/wordpress-composer/tree/7.1"
             },
-            "time": "2026-05-26T23:47:12+00:00"
+            "time": "2026-08-20T00:12:12+00:00"
         },
         {
             "name": "phpoption/phpoption",
-            "version": "1.9.5",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "75365b91986c2405cf5e1e012c5595cd487a98be"
+                "reference": "67b192b6a42ec03944b972d6e633ddec78ad2c6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/75365b91986c2405cf5e1e012c5595cd487a98be",
-                "reference": "75365b91986c2405cf5e1e012c5595cd487a98be",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/67b192b6a42ec03944b972d6e633ddec78ad2c6d",
+                "reference": "67b192b6a42ec03944b972d6e633ddec78ad2c6d",
                 "shasum": ""
             },
             "require": {
@@ -294,7 +294,7 @@
             },
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.8.2",
-                "phpunit/phpunit": "^8.5.44 || ^9.6.25 || ^10.5.53 || ^11.5.34"
+                "phpunit/phpunit": "^8.5.54 || ^9.6.36 || ^10.5.64 || ^11.5.56 || ^12.5.33"
             },
             "type": "library",
             "extra": {
@@ -336,7 +336,7 @@
             ],
             "support": {
                 "issues": "https://github.com/schmittjoh/php-option/issues",
-                "source": "https://github.com/schmittjoh/php-option/tree/1.9.5"
+                "source": "https://github.com/schmittjoh/php-option/tree/1.10.0"
             },
             "funding": [
                 {
@@ -348,7 +348,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-12-27T19:41:33+00:00"
+            "time": "2026-08-24T00:54:40+00:00"
         },
         {
             "name": "purdue/boilerup-wp",
@@ -453,17 +453,17 @@
         },
         {
             "name": "purdue/purdue-home-theme",
-            "version": "1.1.53",
+            "version": "1.1.66",
             "source": {
                 "type": "git",
                 "url": "git@github.com:Purdue/purdue-home-theme.git",
-                "reference": "68190afd6cd2096b32a900fa3ee015ca885e1547"
+                "reference": "38e588f6c4f43e31b093dd1e618ce889de7e4062"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://purdue.github.io/dist/purdue/purdue-home-theme/purdue-purdue-home-theme-68190afd6cd2096b32a900fa3ee015ca885e1547-zip-35b4e8.tar",
-                "reference": "68190afd6cd2096b32a900fa3ee015ca885e1547",
-                "shasum": "db624bcd4c1634cf9ad61e2335a2101333bc9b8c"
+                "url": "https://purdue.github.io/dist/purdue/purdue-home-theme/purdue-purdue-home-theme-38e588f6c4f43e31b093dd1e618ce889de7e4062-zip-5de5ef.tar",
+                "reference": "38e588f6c4f43e31b093dd1e618ce889de7e4062",
+                "shasum": "eff1fd224d723b58d0ad6ec2637717a7a9e595f9"
             },
             "require": {
                 "purdue/boilerup-wp": "*"
@@ -481,10 +481,10 @@
             ],
             "description": "WordPress theme based on Purdue University digital brand standards ",
             "support": {
-                "source": "https://github.com/Purdue/purdue-home-theme/tree/1.1.53",
+                "source": "https://github.com/Purdue/purdue-home-theme/tree/1.1.66",
                 "issues": "https://github.com/Purdue/purdue-home-theme/issues"
             },
-            "time": "2026-06-02T15:07:15+00:00"
+            "time": "2026-08-19T17:17:42+00:00"
         },
         {
             "name": "purdue/purdue-wp-theme",
@@ -686,16 +686,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.13.5",
+            "version": "3.13.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPCSStandards/PHP_CodeSniffer.git",
-                "reference": "0ca86845ce43291e8f5692c7356fccf3bcf02bf4"
+                "reference": "4c378e1a528ea066890fc2397cbdd2f94eb2fc91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/0ca86845ce43291e8f5692c7356fccf3bcf02bf4",
-                "reference": "0ca86845ce43291e8f5692c7356fccf3bcf02bf4",
+                "url": "https://api.github.com/repos/PHPCSStandards/PHP_CodeSniffer/zipball/4c378e1a528ea066890fc2397cbdd2f94eb2fc91",
+                "reference": "4c378e1a528ea066890fc2397cbdd2f94eb2fc91",
                 "shasum": ""
             },
             "require": {
@@ -761,7 +761,7 @@
                     "type": "thanks_dev"
                 }
             ],
-            "time": "2025-11-04T16:30:35+00:00"
+            "time": "2026-08-06T00:17:32+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -991,15 +991,15 @@
         },
         {
             "name": "wpackagist-plugin/duracelltomi-google-tag-manager",
-            "version": "1.22.3",
+            "version": "1.22.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/duracelltomi-google-tag-manager/",
-                "reference": "tags/1.22.3"
+                "reference": "tags/1.22.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/duracelltomi-google-tag-manager.1.22.3.zip"
+                "url": "https://downloads.wordpress.org/plugin/duracelltomi-google-tag-manager.1.22.5.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
