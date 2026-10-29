@@ -338,16 +338,16 @@
         },
         {
             "name": "pantheon-systems/wordpress-composer",
-            "version": "7.1.3",
+            "version": "7.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pantheon-systems/wordpress-composer.git",
-                "reference": "f869af8f6f76aa6536eeaab1634bdaa074093fc3"
+                "reference": "e089e6510444bcc66a95a663c8c9e17b7369e984"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pantheon-systems/wordpress-composer/zipball/f869af8f6f76aa6536eeaab1634bdaa074093fc3",
-                "reference": "f869af8f6f76aa6536eeaab1634bdaa074093fc3",
+                "url": "https://api.github.com/repos/pantheon-systems/wordpress-composer/zipball/e089e6510444bcc66a95a663c8c9e17b7369e984",
+                "reference": "e089e6510444bcc66a95a663c8c9e17b7369e984",
                 "shasum": ""
             },
             "require": {
@@ -367,9 +367,9 @@
             "description": "WordPress for Pantheon with a composer.json file.",
             "support": {
                 "issues": "https://github.com/pantheon-systems/wordpress-composer/issues",
-                "source": "https://github.com/pantheon-systems/wordpress-composer/tree/7.1.3"
+                "source": "https://github.com/pantheon-systems/wordpress-composer/tree/7.1.4"
             },
-            "time": "2026-10-06T17:25:30+00:00"
+            "time": "2026-10-28T17:43:46+00:00"
         },
         {
             "name": "phpcsstandards/phpcsextra",
@@ -664,7 +664,7 @@
                 "type": "tar",
                 "url": "https://purdue.github.io/dist/purdue/bulma-blocks/purdue-bulma-blocks-fa0d882158e6a72e0df2e96eaba1be6720a39421-zip-0fbb63.tar",
                 "reference": "fa0d882158e6a72e0df2e96eaba1be6720a39421",
-                "shasum": "9e8ea0dc17c12c3bf39e27d216a12afe3a64091e"
+                "shasum": "89db5c193759ddb031abf6274b110fde2822c371"
             },
             "require": {
                 "php": ">=7.0"
@@ -699,7 +699,7 @@
                 "type": "tar",
                 "url": "https://purdue.github.io/dist/purdue/purdue-blocks/purdue-purdue-blocks-8d20c780a22e215fe7a40b590f7b0144f166ee05-zip-a4c9a5.tar",
                 "reference": "8d20c780a22e215fe7a40b590f7b0144f166ee05",
-                "shasum": "328a4281776c938f4257c4559944a6e51fff5930"
+                "shasum": "7521e5018ef2c658b55cf95ea3080b4c1039abe6"
             },
             "require": {
                 "php": ">=7.0"
@@ -724,17 +724,17 @@
         },
         {
             "name": "purdue/purdue-home-theme",
-            "version": "1.1.71",
+            "version": "1.1.72",
             "source": {
                 "type": "git",
                 "url": "git@github.com:Purdue/purdue-home-theme.git",
-                "reference": "c639be07b1e8f74e05fdb577be14368bdc849ad4"
+                "reference": "39e25986f623387b40c2ce83804f228beddf697f"
             },
             "dist": {
                 "type": "tar",
-                "url": "https://purdue.github.io/dist/purdue/purdue-home-theme/purdue-purdue-home-theme-c639be07b1e8f74e05fdb577be14368bdc849ad4-zip-6d609e.tar",
-                "reference": "c639be07b1e8f74e05fdb577be14368bdc849ad4",
-                "shasum": "cc4f693dc58acb570daa466e95dbbcdc7fd1e56e"
+                "url": "https://purdue.github.io/dist/purdue/purdue-home-theme/purdue-purdue-home-theme-39e25986f623387b40c2ce83804f228beddf697f-zip-66d4bd.tar",
+                "reference": "39e25986f623387b40c2ce83804f228beddf697f",
+                "shasum": "6968c7548b080376c0f6248e20b626f0793c43d3"
             },
             "require": {
                 "purdue/boilerup-wp": "*"
@@ -752,10 +752,10 @@
             ],
             "description": "WordPress theme based on Purdue University digital brand standards ",
             "support": {
-                "source": "https://github.com/Purdue/purdue-home-theme/tree/1.1.71",
+                "source": "https://github.com/Purdue/purdue-home-theme/tree/1.1.72",
                 "issues": "https://github.com/Purdue/purdue-home-theme/issues"
             },
-            "time": "2026-09-28T17:34:20+00:00"
+            "time": "2026-10-09T13:01:13+00:00"
         },
         {
             "name": "purdue/purdue-wp-theme",
@@ -769,7 +769,7 @@
                 "type": "tar",
                 "url": "https://purdue.github.io/dist/purdue/purdue-wp-theme/purdue-purdue-wp-theme-adca46d5ebff667ee524472264fe925beac29c13-zip-5b7891.tar",
                 "reference": "adca46d5ebff667ee524472264fe925beac29c13",
-                "shasum": "ce28c48347e79e121b113a2739d32d96eabda6e9"
+                "shasum": "44be7564b4e101e5f62bab731b3b2ae8d3812497"
             },
             "require": {
                 "purdue/boilerup-wp": "*",
@@ -1045,12 +1045,12 @@
             "version": "v3.6.10",
             "source": {
                 "type": "git",
-                "url": "https://github.com/vlucas/phpdotenv.git",
+                "url": "https://github.com/phpdotenv/phpdotenv.git",
                 "reference": "5b547cdb25825f10251370f57ba5d9d924e6f68e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/5b547cdb25825f10251370f57ba5d9d924e6f68e",
+                "url": "https://api.github.com/repos/phpdotenv/phpdotenv/zipball/5b547cdb25825f10251370f57ba5d9d924e6f68e",
                 "reference": "5b547cdb25825f10251370f57ba5d9d924e6f68e",
                 "shasum": ""
             },
@@ -1185,15 +1185,15 @@
         },
         {
             "name": "wpackagist-plugin/autodescription",
-            "version": "5.1.4",
+            "version": "5.2.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/autodescription/",
-                "reference": "tags/5.1.4"
+                "reference": "tags/5.2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/autodescription.5.1.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/autodescription.5.2.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -1329,15 +1329,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-importer",
-            "version": "0.9.6",
+            "version": "0.9.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-importer/",
-                "reference": "tags/0.9.6"
+                "reference": "tags/0.9.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-importer.0.9.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-importer.0.9.7.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
